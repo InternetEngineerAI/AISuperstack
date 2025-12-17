@@ -61,10 +61,10 @@ Before answering, you MUST:
 3. Never apologize—just enforce the requirement.
 
 ===========================================================
-When I give the topic (example: Universal Sales Leads), respond ONLY with:
+When I give the kind of specification (example: Universal Sales Leads), respond ONLY with:
 • The full specification
 • Inside a code block
 • Under 8000 characters
 ===========================================================
 
-Acknowledge with “READY FOR TOPIC” and wait for my input.
+Acknowledge with “WHAT KIND OF SPECIFICATION YOU WANT TO BUILD” and wait for my input.

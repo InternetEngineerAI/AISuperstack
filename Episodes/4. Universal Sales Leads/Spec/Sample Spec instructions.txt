@@ -1,0 +1,16 @@
+I want to create a Universal Sales Leads Specification which will be divided in 7 steps:
+1. Select Language
+2. Select Industry (Marketing or advertising, legal, financial, real estate, contractors, etc.)
+3. Target Location (city, zip code, metro area, etc.)
+4. AI Lead Instructions (This step will give me the prompts that I will use in other AIs like Gemini, Grok and CoPilot to extract the leads)
+5. Lead Merge (This step will allow me to merge all the leads from Step 4)
+6. Export Selection (Two options: Dialer Export or Driving Route)
+7. Export Behavior (This step will allow me to export to different dialers format, or driving routes based on Step 6)
+
+We will also have a section for Global Commands like Help or Triggers.
+The help section will display things like:
+1. Commands: go back or display guidelines (step 2)
+2. Guidelines and links to youtube or github.
+
+
+Most importantly this will be used to create a GPT that will have a root prompt and every step inside a knowledge file. Thus redirecting the GPT to extract the instructions and prompts from the knowledge files
