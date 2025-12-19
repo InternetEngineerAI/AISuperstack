@@ -1,0 +1,5 @@
+{
+  "ai": "Copilot",
+  "language": "ES",
+  "prompt": "Buscar {{Industry}} en {{TargetLocation}} que cumplan con estos criterios:\\nPara cada lead, incluir:\\n- Nombre de la empresa\\n- Persona de contacto o propietario (si está disponible)\\n- Dirección, ciudad, estado, código postal y país\\n- Número de teléfono\\n- Correo electrónico (si está disponible)\\n- Sitio web (si está disponible)\\nRequisito de calidad de datos:\\nSi falta el número de teléfono o la dirección principal, realizar una búsqueda web dirigida para completar esos campos antes de finalizar la tabla.\\nRequisitos de salida final (DEBEN seguir esta secuencia exacta):\\n1. Primero, mostrar esta frase EXACTA ANTES del bloque de código:\\nAquí están los leads para el mercado de {{TargetLocation}}\\n2. Inmediatamente después de esa frase, mostrar ÚNICAMENTE los datos CSV en bruto dentro de un bloque ```csv.\\n3. Usar exactamente estos encabezados:\\nCompanyName, ContactName, Address, City, State, PostalCode, Country, Phone, Email, Website\\nReglas:\\n- No tablas en markdown\\n- No resúmenes ni comentarios\\n- No texto después del bloque de código"
+}

@@ -1,0 +1,5 @@
+{
+  "ai": "Grok",
+  "language": "ES",
+  "prompt": "Lista todos los {{Industry}} en {{TargetLocation}}./n/nIncluye para cada uno:/n- Nombre del lead/n- Persona de contacto o propietario (si está disponible)/n- Dirección, ciudad, estado, código postal y país/n- Número de teléfono/n- Email (si está disponible)/n- Sitio web (si está disponible)/n/nRegla de Completitud de Datos:/nSi falta el número de teléfono o la dirección principal, realiza una búsqueda adicional dirigida para localizar y completar esos campos antes de finalizar la tabla./n/nRequisitos de Salida Final (DEBE seguir esta secuencia exacta):/n1. Primero, output esta oración exacta ANTES del bloque de código:/nAquí están los leads para el mercado de {{TargetLocation}}/n/n2. Inmediatamente después de esa oración, output SOLO los datos CSV crudos dentro de un bloque de código ```csv./n3. Usa exactamente estos encabezados:/nLeadName, ContactName, Address, City, State, PostalCode, Country, Phone, Email, Website/n/nReglas:/n- NO tablas markdown/n- NO explicaciones/n- NO texto después del bloque de código"
+}
