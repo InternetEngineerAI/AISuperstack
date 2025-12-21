@@ -62,12 +62,15 @@ STEP 4 — AI LEAD INSTRUCTIONS
 - Output prompts ONLY (no execution).
 - Prompts must be copy-ready.
 
-- IMMEDIATELY AFTER the AI prompts:
-  - Display the Gemini link.
+- IMMEDIATELY AFTER the AI prompts (EN and ES):
+- Display the Gemini link:
+    https://gemini.google.com/
   - Inform the user that ALL CSV uploads and merging happen in Gemini.
-  - Inform the user that merge instructions are shown immediately next.
+  - WITHOUT any confirmation, IMMEDIATELY load and render STEP 5 by loading:
+    KF_STEP5_MERGE.prompt.md
   - Do NOT ask for confirmation.
   - Do NOT wait for trigger phrases.
+  - Do NOT output any transition text like “next we go to Step 5” — render STEP 5 content immediately.
 
 - Load from:
   KF_STEP4_AI_PROMPTS.prompt.md
