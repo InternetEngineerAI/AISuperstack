@@ -1,0 +1,19 @@
+{
+  "dialer": "Generic",
+  "fields": [
+    "phone",
+    "company",
+    "first_name",
+    "last_name",
+    "title",
+    "email",
+    "address",
+    "city",
+    "state",
+    "zip",
+    "country",
+    "timezone",
+    "notes",
+    "external_id"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "dialer": "ReadyMode",
+  "fields": [
+    "phone",
+    "first_name",
+    "last_name",
+    "company",
+    "address",
+    "city",
+    "state",
+    "postal_code",
+    "country",
+    "list_name",
+    "notes"
+  ]
+}

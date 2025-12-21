@@ -1,174 +1,161 @@
-# KF_STEP5_MERGE — Lead Merge, Dedup, Normalize, Enrich (Run in Gemini)
+# KF_STEP5_MERGE — Lead Merge (Gemini)
 
 ===================================================
-STEP PURPOSE
+STEP 5 — LEAD MERGE (GEMINI)
 ===================================================
-This step merges multiple uploaded CSV lead files into one cleaned master CSV.
-This step is designed to be executed inside Gemini to leverage enrichment and
-address normalization capabilities.
 
-Run this step in Gemini:
+This step is displayed automatically immediately after STEP 4 finishes.
+
+Great — now upload all CSV files generated from:
+- Gemini
+- Copilot
+- Grok
+
+Upload ALL CSV files into Gemini at the same time.
+
+Gemini will:
+- Merge all files
+- Remove duplicates
+- Normalize addresses
+- Validate formats
+- Create Lead IDs
+
+After cleaning, you will save ONE master CSV and then return here to proceed to export.
+
+Open Gemini:
 https://gemini.google.com/
 
 ===================================================
-EXECUTION RULES
+RENDERING REQUIREMENT (CRITICAL)
 ===================================================
-- STEP 5 can only execute after STEP 4 is completed.
-- The user may upload multiple CSV files at once.
-- The number of files may vary and filenames may vary.
-- Detect ALL uploaded CSV files.
-- Read every CSV file uploaded simultaneously.
-- Merge ALL rows from ALL uploaded files into one unified master dataset.
-- Remove ALL duplicates using:
+When STEP 5 is displayed, you MUST output the Gemini merge prompt
+inside a single triple-backtick code block.
+Do NOT summarize it.
+Do NOT reference it.
+Render it in full.
+
+===================================================
+COPY-AND-PASTE INTO GEMINI
+===================================================
+
+--------------------------------
+IF Language = "EN"
+--------------------------------
+
+Copy EVERYTHING below and paste it into Gemini
+AFTER uploading ALL CSV files at the same time.
+
+```text
+You are an AI data-cleaning and merging assistant.
+
+I will upload multiple CSV files at the same time. The number of files may vary, and their filenames may vary.
+
+Your tasks:
+
+• Detect ALL uploaded CSV files.
+• Read every CSV file uploaded simultaneously.
+• Merge all rows from all uploaded files into one unified master dataset.
+
+• Remove ALL duplicates using:
   - CompanyName (fuzzy match allowed)
   - Phone
   - Address
   - Website
-- Normalize addresses to USPS standards.
-- Validate phone and email formatting.
-- Tag each lead with a Segment value.
-- Enrich leads when publicly available information exists:
+
+• Normalize addresses to USPS standards.
+• Validate phone and email formatting.
+
+• Tag each lead with a Segment value such as:
+  - RegionalChain
+  - ArtisanHighEnd
+
+• Enrich leads when publicly available information exists:
   - Owner
   - Buyer / Procurement
+  - Head Baker
   - Main contact email/phone
-- Create a unique LeadId for each row in this format:
+
+• Create a unique LeadId for each row in this format:
   YSMC-{YYYYMMDD}-{sequence}
 
-===================================================
-OUTPUT FILE REQUIREMENTS
-===================================================
+Final Output:
 Produce a downloadable CSV file named:
-Cleaned_Leads_{YYYYMMDD}.csv
+Merged_Leads_For_{{Industry}}_{{TargetLocation}}_YYYYMMDD.csv
 
 Use EXACT headers in this order:
-LeadId, CompanyName, Segment, ContactName, Phone, Email, Website, Address, City, State, PostalCode, Country
+LeadId, CompanyName, Segment, ContactName, Phone, Email, Website,
+Address, City, State, PostalCode, Country
 
-IMPORTANT:
-- CSV column headers MUST remain in English for both EN and ES workflows.
-
-===================================================
-RESPONSE FORMAT (MANDATORY)
-===================================================
 In your response:
-
-1) Include ONE short sentence telling the user here are the merged leads.
-2) Output ONLY the final CSV inside a:
-   ```csv:disable-run
-   ...
-3) Include ONE short sentence telling the user they can open it in Excel or upload it to Google Sheets to view and edit it.
-
-4) Display this link EXACTLY as written:
+• First, output ONLY the final CSV inside a ```csv code block.
+• Include ONE short sentence telling the user here are the merged leads for: {{Industry}} in location {{TargetLocation}}.
+• Include ONE short sentence telling the user they can open it in Excel or upload it to Google Sheets to view and edit it.
+• Display this link exactly as written:
 https://sheets.google.com/
 
-5) Do NOT include any other explanations or commentary.
-
-===================================================
-LANGUAGE-SPECIFIC INSTRUCTIONS
-IF Language = "EN"
-
-User-facing instructions (apply exactly):
-
-Detect ALL uploaded CSV files.
-
-Read every CSV file uploaded simultaneously.
-
-Merge all rows from all uploaded files into one unified master dataset.
-
-Remove ALL duplicates using:
-
-CompanyName (fuzzy match allowed)
-
-Phone
-
-Address
-
-Website
-
-Normalize addresses to USPS standards.
-
-Validate phone and email formatting.
-
-Tag each lead with a Segment value.
-
-Enrich leads when publicly available information exists:
-
-Owner
-
-Buyer / Procurement
-
-Main contact email/phone
-
-Create LeadId for each row:
-YSMC-{YYYYMMDD}-{sequence}
-
-Response text (EN) MUST be:
-Sentence 1 (short):
-"Here are the merged leads."
-
-Then the CSV in ```csv:disable-run
-
-Sentence 2 (short):
-"You can open this in Excel or upload it to Google Sheets to view and edit."
-
-Then show this link exactly:
-https://sheets.google.com/
+Do not include any other explanations or commentary.
 
 SI EL IDIOMA = "ES"
 
-Instrucciones para el usuario (aplicar exactamente):
+Copia TODO lo siguiente y pégalo en Gemini
+DESPUÉS de subir TODOS los archivos CSV al mismo tiempo.
 
-Detecta TODOS los archivos CSV cargados.
+Eres un asistente de IA para limpieza y unión de datos.
 
-Lee cada archivo CSV cargado simultáneamente.
+Subiré múltiples archivos CSV al mismo tiempo. La cantidad de archivos puede variar y los nombres de archivo pueden variar.
 
-Une todas las filas de todos los archivos en un solo dataset maestro.
+Tus tareas:
 
-Elimina TODOS los duplicados usando:
+• Detecta TODOS los archivos CSV cargados.
+• Lee cada archivo CSV cargado simultáneamente.
+• Une todas las filas de todos los archivos en un solo dataset maestro.
 
-CompanyName (se permite coincidencia difusa)
+• Elimina TODOS los duplicados usando:
+  - CompanyName (se permite coincidencia difusa)
+  - Phone
+  - Address
+  - Website
 
-Phone
+• Normaliza las direcciones al estándar USPS.
+• Valida el formato de teléfonos y correos electrónicos.
 
-Address
+• Etiqueta cada lead con un valor Segment como:
+  - RegionalChain
+  - ArtisanHighEnd
 
-Website
+• Enriquece los leads cuando exista información pública disponible:
+  - Owner
+  - Buyer / Procurement
+  - Head Baker
+  - Correo electrónico / teléfono principal de contacto
 
-Normaliza las direcciones al estándar USPS.
+• Crea un LeadId único para cada fila con este formato:
+  YSMC-{YYYYMMDD}-{sequence}
 
-Valida el formato de teléfonos y correos electrónicos.
+Resultado Final:
+Genera un archivo CSV descargable llamado:
+Merged_Leads_For_{{Industry}}_{{TargetLocation}}_YYYYMMDD.csv
 
-Etiqueta cada lead con un valor Segment.
+Usa EXACTAMENTE estos encabezados en este orden:
+LeadId, CompanyName, Segment, ContactName, Phone, Email, Website,
+Address, City, State, PostalCode, Country
 
-Enriquece los leads cuando exista información pública disponible:
-
-Owner
-
-Buyer / Procurement
-
-Main contact email/phone
-
-Crea un LeadId único por fila con este formato:
-YSMC-{YYYYMMDD}-{sequence}
-
-Texto de respuesta (ES) DEBE ser:
-Frase 1 (corta):
-"Aquí están los leads combinados."
-
-Luego el CSV en ```csv:disable-run
-
-Frase 2 (corta):
-"Puedes abrir esto en Excel o subirlo a Google Sheets para ver y editar."
-
-Luego muestra este enlace exactamente:
+En tu respuesta:
+• Primero, muestra SOLO el CSV final dentro de un bloque ```csv.
+• Incluye UNA frase corta indicando que aquí están los leads combinados para: {{Industry}} en la ubicación {{TargetLocation}}.
+• Incluye UNA frase corta indicando que se puede abrir en Excel o subirlo a Google Sheets para ver y editar.
+• Muestra este enlace exactamente como está escrito:
 https://sheets.google.com/
+
+No incluyas ninguna otra explicación ni comentario.
 
 ===================================================
 STEP TRANSITION
 
-After outputting the merged CSV:
+After downloading the merged CSV from Gemini:
 
-Lock STEP 5 as completed.
+Return to Universal Sales Leads
 
-Proceed to STEP 6.
+Proceed to STEP 6 — Export Selection
 
 Load: KF_STEP6_EXPORT_SELECT.prompt.md

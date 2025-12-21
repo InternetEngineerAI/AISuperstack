@@ -1,0 +1,17 @@
+{
+  "dialer": "RingOver",
+  "fields": [
+    "number",
+    "name",
+    "company",
+    "email",
+    "address",
+    "city",
+    "state",
+    "zip",
+    "country",
+    "notes",
+    "custom_1",
+    "custom_2"
+  ]
+}
