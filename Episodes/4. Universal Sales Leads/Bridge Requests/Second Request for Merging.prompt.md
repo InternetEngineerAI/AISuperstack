@@ -1,1 +1,0 @@
-Modify this and put the Gemini Link next to the purpose, so the user does not have to type the link
