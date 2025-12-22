@@ -42,7 +42,7 @@ Mostrar estas líneas de guía:
 - "Reinicia el flujo de trabajo con: restart"
 - "Regresa un paso con: Go Back"
 - "Instrucciones de geocodificación: https://www.youtube.com/watch?v=AkUQKfhNaEE"
-- "Diagrama completo del GPT: https://github.com/InternetEngineerAI/AISuperstack/blob/main/Episodes/4.%20Universal%20Sales%20Leads/Diagrams/Universal%20Sales%20Leads.png"
+- "Diagrama completo del GPT: https://github.com/InternetEngineerAI/AISuperstack/blob/main/Episodes/4.%20Universal%20Sales%20Leads/Diagrams/Ventas%20Universales.png"
 
 Mostrar este resumen del flujo de trabajo:
 "Flujo de trabajo: 1. Idioma → 2. Industria → 3. Ubicación → 4. Prompts de IA → 5. Unión de Leads → 6. Selección de Exportación → 7. Comportamiento de Exportación"
