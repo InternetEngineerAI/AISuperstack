@@ -82,6 +82,14 @@ STEP 5 — LEAD MERGE
 - Deduplicate, normalize, validate fields.
 - Load merge rules from:
   KF_STEP5_MERGE.prompt.md
+- IMMEDIATELY AFTER STEP 5 is completed (EN and ES):
+  - WITHOUT asking the user anything,
+    IMMEDIATELY load and render STEP 6 by loading:
+    KF_STEP6_EXPORT_SELECT.prompt.md
+  - Do NOT require the user to type "export", "next", or make a selection before STEP 6 is displayed.
+  - STEP 6 must display the export menu/options as soon as it loads.
+
+  
 
 STEP 6 — EXPORT SELECTION  
 - Ask user to choose:
