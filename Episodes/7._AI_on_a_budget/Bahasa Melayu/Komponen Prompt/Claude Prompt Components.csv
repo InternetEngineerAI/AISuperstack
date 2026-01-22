@@ -1,0 +1,11 @@
+#,Prompt Component,Purpose (Short),Brief Example
+1,Goal/Objective,Defines what to achieve,"""Generate weekly sales reports from invoice data"""
+2,Role/Identity,Establishes agent perspective,"""You are a financial analyst specializing in small business accounting"""
+3,Context,Provides necessary background,"""The business operates in Miami with 40+ weekly transactions"""
+4,Constraints,Sets boundaries and rules,"""Never modify original files; only process PDF forms created by Sejda"""
+5,Process Steps,Defines workflow sequence,"""1. Extract data 2. Validate totals 3. Generate output 4. Save to outputs/"""
+6,Output Format,Specifies result structure,"""Return JSON with keys: invoice_number, date, amount, client_name"""
+7,Examples,Demonstrates desired behavior,"""Input: 'Invoice #123' → Output: {'invoice_number': '123', ...}"""
+8,Error Handling,Manages failures gracefully,"""If PDF cannot be read, log error and skip to next file"""
+9,Tools/Actions,Lists available capabilities,"""Use pypdf for forms, bash for file operations, create_file for outputs"""
+10,Tone/Style,Sets communication approach,"""Respond concisely; confirm actions without verbose explanations"""

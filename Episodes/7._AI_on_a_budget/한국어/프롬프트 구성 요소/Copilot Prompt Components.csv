@@ -1,0 +1,10 @@
+#,Prompt Component,Purpose (Short),Brief Example
+1,Task Definition,States exactly what to produce,“Summarize this report in 5 bullets.”
+2,Output Format,Controls structure and consistency,“Return results in a 3‑column table.”
+3,Role / Identity,Sets expertise and behavior,“Act as a senior data architect.”
+4,Context,Provides background needed for accuracy,“Use the client’s Q4 sales data.”
+5,Input Data,Defines what the model must process,“Analyze the text below.”
+6,Constraints,"Limits scope, tone, or rules","“Max 150 words, no jargon.”"
+7,Examples (Few‑Shot),Demonstrates desired pattern,“Follow the style of this sample.”
+8,Validation Steps,Ensures quality and correctness,“Check for missing fields before output.”
+9,Follow‑Up Behavior,Guides next action after completion,“Ask if refinement is needed.”

@@ -1,0 +1,8 @@
+#,Prompt Component,Purpose (Short),Brief Example
+1,Instruction/Task,Defines the core action the AI must perform.,"""Summarize this article."""
+2,Context,Provides background to narrow the focus.,"""You are a senior lawyer reviewing a contract."""
+3,Input Data,The specific content the AI needs to process.,[The text of a 500-word essay]
+4,Output Indicator,Specifies the desired format or structure.,"""Return the answer as a bulleted list."""
+5,Constraints,Sets boundaries or rules for the response.,"""Do not use technical jargon."""
+6,Few-Shot Examples,Shows the AI the expected pattern.,"""Input: Happy -> Output: 😊"""
+7,Style/Tone,Dictates the personality of the response.,"""Use a professional and objective tone."""

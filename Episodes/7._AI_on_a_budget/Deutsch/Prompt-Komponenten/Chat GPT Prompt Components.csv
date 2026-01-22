@@ -1,0 +1,11 @@
+#,Prompt Component,Purpose (Short),Brief Example
+1,Role / System Instruction,Defines AI behavior,"""You are a financial analyst."""
+2,Objective / Task,States what to do,"""Summarize this report."""
+3,Output Format,Controls response structure,"""Return a markdown table."""
+4,Constraints / Rules,Sets boundaries,"""Do not exceed 100 words."""
+5,Context,Provides background,"""This report is for investors."""
+6,Input Data,Source content,"""Here is the sales data..."""
+7,Style / Tone,Controls voice,"""Use a professional tone."""
+8,Examples (Few-shot),Shows expected pattern,"""Example input → output"""
+9,Validation / Checks,Enforces accuracy,"""Verify all calculations."""
+10,Tools / Sources,Enables capabilities,"""Use web search if needed."""

@@ -1,0 +1,2 @@
+Model Name,Model Version,Billing Unit (Token or Request),Token/Request Definition,Daily Limit (Free),Daily Limit (Paid),Images (Free),Images (Paid),Chat History Cost Impact,Answer Size Optimization,Context Trimming Impact,Token Skipping Supported,Prompt Batching Supported
+Kimi,2025-01-20,Token,1 token ≈ 0.75 English char,Not Disclosed,Not Disclosed,Not Disclosed,Not Disclosed,Full history billed,Shorter output = fewer tokens,Trimmed context lowers prompt tokens,No,No

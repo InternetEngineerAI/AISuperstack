@@ -1,0 +1,8 @@
+#,Prompt Component,Purpose (Short),Brief Example
+1,Task Instruction,Clearly defines what the AI should do,Summarize the following article in 3 sentences.
+2,Context,Provides background or relevant information,Given the user's query about climate change...
+3,Output Format,Specifies structure or style of response,"Respond in JSON format with keys: title, summary."
+4,Constraints,"Limits scope, length, or content",Keep the answer under 100 words.
+5,Examples,Demonstrates desired input-output pattern,Example: Input: 'Explain photosynthesis.' → Output: 'Photosynthesis is...'
+6,Tone/Style,Sets voice or persona for response,Use a professional and formal tone.
+7,Role Assignment,Assigns a specific role to the AI,You are a financial advisor.

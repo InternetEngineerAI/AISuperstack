@@ -1,0 +1,7 @@
+#,Prompt Component,Purpose (Short),Brief Example
+1,Objective,Defines main goal,"""Generate a story about a dragon."""
+2,Role,Sets AI persona,"""You are a creative writer."""
+3,Instructions,Guides process,"""Use vivid descriptions and dialogue."""
+4,Constraints,Sets limits,"""Keep under 500 words; avoid violence."""
+5,Output Format,Structures response,"""Output in markdown with sections."""
+6,Examples,Illustrates expectations,"""Example: Once upon a time..."""

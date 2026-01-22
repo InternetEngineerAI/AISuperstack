@@ -1,0 +1,8 @@
+#,Prompt Component,Purpose (Short),Brief Example
+1,Task/Instruction,Specify the action required,Summarize the following text.
+2,Context,Provide background information,You are a medical expert.
+3,Input Data,Present the data to process,Article: 'Climate change effects...'
+4,Output Format,Define the response structure,List key points in a table.
+5,Constraints,Limit response scope or rules,Use no more than 100 words.
+6,Examples,Demonstrate expected response patterns,Example: Input: '...' Output: '...'
+7,Tone/Style,Set the response tone,Write in a professional tone.

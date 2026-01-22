@@ -1,0 +1,9 @@
+#,Prompt Component,Purpose (Short),Brief Example
+1,Clear Objective,Define exact goal,“Summarize this article in 3 bullet points.”
+2,Role Assignment,Set AI persona,“You are a senior Python dev.”
+3,Context,Supply background,“Given Q3 sales data below…”
+4,Output Format,Specify structure,“Return only a markdown table.”
+5,Constraints,List limits,"“Max 150 words, no jargon.”"
+6,Examples,Show desired style,“Good: ‘✅ Done’; Bad: ‘Done.’”
+7,Step-by-Step,Request reasoning,“Think then answer.”
+8,Tone,Set voice,"“Use friendly, upbeat tone.”"
